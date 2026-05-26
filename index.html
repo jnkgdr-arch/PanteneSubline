@@ -3,111 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pantene Scalp Vitality | Marketing Sub-line Strategy</title>
+  <title>P&G Competitive Market Assessment Dashboard (2026)</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    :root { --bg:#0b1220; --card:#111a2e; --ink:#e8eefc; --muted:#9db0d4; --accent:#4da3ff; --accent2:#7be0ff; --ok:#7ad99f; }
-    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#09101d,#101b31);color:var(--ink)}
-    header{padding:56px 24px 28px;max-width:1200px;margin:auto}
-    h1{font-size:2.1rem;margin:0 0 10px} p{line-height:1.5}
-    .sub{color:var(--muted);max-width:920px}
-    main{max-width:1200px;margin:auto;padding:0 24px 60px;display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
-    .card{background:rgba(17,26,46,.9);border:1px solid #223353;border-radius:14px;padding:16px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
-    .span-12{grid-column:span 12}.span-6{grid-column:span 6}.span-4{grid-column:span 4}.span-8{grid-column:span 8}
-    h2{margin:0 0 8px;font-size:1.1rem} h3{margin:0 0 8px;color:var(--accent2)}
-    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi{background:#0e172b;padding:12px;border-radius:10px;border:1px solid #273b63}
-    .kpi .n{font-size:1.4rem;font-weight:700}.kpi .l{color:var(--muted);font-size:.88rem}
-    table{width:100%;border-collapse:collapse;font-size:.92rem} th,td{border-bottom:1px solid #294064;padding:8px;text-align:left} th{color:#b5cbf3}
-    .swot{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.pill{padding:10px;border-radius:10px;border:1px solid #2d4b7c}
-    .pill strong{display:block;margin-bottom:6px}
+    :root { --bg:#0b1220; --card:#111a2e; --ink:#e8eefc; --muted:#9db0d4; --accent:#4da3ff; --accent2:#7be0ff; --ok:#7ad99f; --warn:#ffc86b; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#09101d,#101b31);color:var(--ink)}
+    header{padding:48px 24px 20px;max-width:1280px;margin:auto}
+    h1{font-size:2.1rem;margin:0 0 10px}
+    p{line-height:1.5}
+    .sub{color:var(--muted);max-width:980px}
+    main{max-width:1280px;margin:auto;padding:0 24px 60px;display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
+    .card{background:rgba(17,26,46,.92);border:1px solid #223353;border-radius:14px;padding:16px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+    .span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-6{grid-column:span 6}.span-4{grid-column:span 4}
+    h2{margin:0 0 8px;font-size:1.1rem}
+    h3{margin:0 0 8px;color:var(--accent2)}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .kpi{background:#0e172b;padding:12px;border-radius:10px;border:1px solid #273b63}
+    .kpi .n{font-size:1.35rem;font-weight:700}.kpi .l{color:var(--muted);font-size:.88rem}
+    table{width:100%;border-collapse:collapse;font-size:.92rem}
+    th,td{border-bottom:1px solid #294064;padding:8px;text-align:left;vertical-align:top}
+    th{color:#b5cbf3}
+    .badge{padding:4px 8px;border-radius:999px;font-size:.76rem;font-weight:700}
+    .leader{background:#153b68;color:#9fd0ff}.challenger{background:#344214;color:#cceea2}.follower{background:#4a3420;color:#ffd6a6}.niche{background:#46273b;color:#f7bfdc}
     .muted{color:var(--muted)}
-    @media (max-width:900px){.span-6,.span-4,.span-8{grid-column:span 12}.kpis{grid-template-columns:repeat(2,1fr)}}
+    ul{margin:8px 0 0 18px;padding:0}
+    @media (max-width:920px){.span-8,.span-6,.span-4{grid-column:span 12}.kpis{grid-template-columns:repeat(2,1fr)}}
   </style>
 </head>
 <body>
   <header>
-    <h1>Pantene Scalp Vitality — Strategic Marketing Plan Dashboard</h1>
-    <p class="sub">A data-rich concept website for Pantene’s sub-line strategy combining scalp-focused formulations, tiered light therapy devices, and digital services for Gen Z prevention and 45+ restoration.</p>
+    <h1>Market Assessment Dashboard: Procter & Gamble vs Key Competitors</h1>
+    <p class="sub">Industry scope: Miscellaneous Chemical Manufacturing (soap, detergents, and cleaning preparations) under personal care and toilet requisites. Company set: Procter &amp; Gamble, Unilever, Kimberly-Clark, and Colgate-Palmolive. Financials and strategic positions reflect the 2025/2026 study summary provided.</p>
   </header>
 
   <main>
     <section class="card span-12">
-      <h2>Executive Summary Snapshot</h2>
+      <h2>Executive Snapshot</h2>
       <div class="kpis">
-        <div class="kpi"><div class="n">$84.284B</div><div class="l">P&G 2025 Net Sales</div></div>
-        <div class="kpi"><div class="n">$16.065B</div><div class="l">P&G 2025 Net Earnings</div></div>
-        <div class="kpi"><div class="n">80%+</div><div class="l">Target Satisfaction in 3 Months</div></div>
-        <div class="kpi"><div class="n">10–20%</div><div class="l">Revenue Lift Goal in 6 Months</div></div>
+        <div class="kpi"><div class="n">$84.284B</div><div class="l">P&amp;G Net Sales (2025)</div></div>
+        <div class="kpi"><div class="n">$16.065B</div><div class="l">P&amp;G Net Earnings (2025)</div></div>
+        <div class="kpi"><div class="n">$125.231B</div><div class="l">P&amp;G Total Assets (2025)</div></div>
+        <div class="kpi"><div class="n">~20%</div><div class="l">P&amp;G Retail Hair Care Global Share</div></div>
       </div>
     </section>
-
-    <section class="card span-6"><h3>Market Segment Opportunity</h3><canvas id="segmentChart"></canvas></section>
-    <section class="card span-6"><h3>AIDA Channel Emphasis</h3><canvas id="aidaChart"></canvas></section>
 
     <section class="card span-8">
-      <h3>Device Tier Pricing & Value Table</h3>
+      <h3>Competitive Financial Comparison</h3>
       <table>
-        <thead><tr><th>Tier</th><th>Light</th><th>Wavelength</th><th>Price</th><th>Consult/Subscr.</th><th>Ointment</th><th>Primary Benefit Focus</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Company</th><th>Role</th><th>Net Sales / Turnover</th><th>Total Assets</th><th>Net Earnings / Profit</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr><td>Premium</td><td>Near-Infrared</td><td>633nm</td><td>$800</td><td>Yes</td><td>100ml</td><td>Collagen, wound healing, density/thickness</td></tr>
-          <tr><td>Premium</td><td>Red</td><td>620nm</td><td>$600</td><td>Yes</td><td>100ml</td><td>Follicle stimulation, blood flow, repair</td></tr>
-          <tr><td>Mid</td><td>Green</td><td>520nm</td><td>$320</td><td>No</td><td>60ml</td><td>Anti-inflammatory maintenance + repair</td></tr>
-          <tr><td>Entry</td><td>Yellow</td><td>590nm</td><td>$150</td><td>No</td><td>None</td><td>Comfort, oxygenation, texture support</td></tr>
+          <tr><td>Procter &amp; Gamble</td><td><span class="badge leader">Market Leader</span></td><td>$84.284B</td><td>$125.231B</td><td>$16.065B</td></tr>
+          <tr><td>Unilever</td><td><span class="badge challenger">Market Challenger</span></td><td>£50.503B</td><td>£70.471B</td><td>£10.011B</td></tr>
+          <tr><td>Kimberly-Clark</td><td><span class="badge follower">Market Follower</span></td><td>$16.447B</td><td>$17.098B</td><td>$2.049B</td></tr>
+          <tr><td>Colgate-Palmolive</td><td><span class="badge niche">Niche Competitor</span></td><td>$20.382B</td><td>$16.330B</td><td>$2.261B</td></tr>
         </tbody>
       </table>
     </section>
 
-    <section class="card span-4"><h3>Channel Distribution Mix</h3><canvas id="channelChart"></canvas></section>
+    <section class="card span-4">
+      <h3>Role Positioning</h3>
+      <canvas id="roleChart"></canvas>
+    </section>
 
     <section class="card span-6">
-      <h3>SWOT Overview</h3>
-      <div class="swot">
-        <div class="pill"><strong>Strengths</strong><span class="muted">Global brand equity, financial strength, R&D capability.</span></div>
-        <div class="pill"><strong>Weaknesses</strong><span class="muted">Slower haircare innovation pace, supply-chain exposure.</span></div>
-        <div class="pill"><strong>Opportunities</strong><span class="muted">Gen Z + 45+ segmentation, AI personalization, social momentum.</span></div>
-        <div class="pill"><strong>Threats</strong><span class="muted">Unilever/L’Oréal pressure, tariffs, rising ESG compliance costs.</span></div>
-      </div>
+      <h3>P&amp;G Regions of Success (Requested View)</h3>
+      <canvas id="regionChart"></canvas>
+      <p class="muted">Highlighted regions of success: Latin America, North America, and Europe.</p>
     </section>
 
-    <section class="card span-6"><h3>12-Month Rollout & Spend Allocation</h3><canvas id="timelineChart"></canvas></section>
+    <section class="card span-6">
+      <h3>2026 Top Global Brand Values (Competing Brands)</h3>
+      <canvas id="brandValueChart"></canvas>
+      <p class="muted">Brand values shown in USD billions: Pantene, Dove, L'Oréal, and Chanel.</p>
+    </section>
 
     <section class="card span-12">
-      <h3>Performance Metrics Framework</h3>
+      <h3>Strategic Assessment Summary</h3>
       <table>
-        <thead><tr><th>Funnel Stage</th><th>Digital Metrics</th><th>Retail Metrics</th><th>Financial Metrics</th></tr></thead>
+        <thead><tr><th>Company</th><th>Core Strengths</th><th>Key Strategy</th><th>Risks / Threats</th></tr></thead>
         <tbody>
-          <tr><td>Awareness</td><td>Reach, impressions, traffic, bounce rate</td><td>In-store exposure, footfall</td><td>CPM, channel ROI</td></tr>
-          <tr><td>Consideration</td><td>Engagement, video completion, content downloads</td><td>Trial and assisted conversion</td><td>CAC by channel</td></tr>
-          <tr><td>Conversion</td><td>Conversion rate, lead-to-close ratio</td><td>Sell-through, unit sales</td><td>Revenue growth, AOV, device sales</td></tr>
-          <tr><td>Retention</td><td>Repeat purchase, subscription renewal</td><td>Repeat basket behaviors</td><td>CLV, revenue per user</td></tr>
+          <tr>
+            <td>Procter &amp; Gamble</td>
+            <td>Global scale, power brands (Pantene, Tide, Olay, Pampers, Gillette), strong profitability.</td>
+            <td>Innovation, packaging, supply chain efficiency, consumer-insight digital tools, advertising intensity, sustainability.</td>
+            <td>Economic sensitivity, regulatory pressure, intense rivalry (especially with Unilever).</td>
+          </tr>
+          <tr>
+            <td>Unilever</td>
+            <td>Strong innovation and marketing engine; diversified portfolio across personal care, home care, and foods.</td>
+            <td>Social-first campaigns, AI integration, bioscience-backed product development, wellness expansion.</td>
+            <td>Currency exposure, execution complexity from diversification, aggressive category competition.</td>
+          </tr>
+          <tr>
+            <td>Kimberly-Clark</td>
+            <td>Steady global footprint; strong hygiene brands; expanded mix via Kenvue merger.</td>
+            <td>Science-led innovation, margin improvement, supply chain optimization, portfolio resilience.</td>
+            <td>Legal and integration risk tied to acquired products; market volatility.</td>
+          </tr>
+          <tr>
+            <td>Colgate-Palmolive</td>
+            <td>Strong oral care and pet health focus with disciplined cost management.</td>
+            <td>Growth + productivity program, premiumization, analytics and AI, supply chain streamlining toward 2030 goals.</td>
+            <td>Narrower category scope vs diversified peers; competitive pressure in core segments.</td>
+          </tr>
         </tbody>
       </table>
+    </section>
+
+    <section class="card span-12">
+      <h3>Conclusion</h3>
+      <ul>
+        <li>Procter &amp; Gamble remains the market leader with the highest net sales, total assets, and earnings among the compared firms.</li>
+        <li>Unilever is the strongest challenger due to innovation velocity, digital engagement, and broad category reach including foods and wellness.</li>
+        <li>Kimberly-Clark fits the follower profile with stable operations and portfolio expansion through merger activity.</li>
+        <li>Colgate-Palmolive remains a niche competitor focused on oral care and pet nutrition rather than broad household coverage.</li>
+      </ul>
     </section>
   </main>
 
-<script>
-new Chart(document.getElementById('segmentChart'), {
-  type:'doughnut',
-  data:{labels:['Age 45+','Gen Z'],datasets:[{data:[41,35],backgroundColor:['#4da3ff','#7be0ff']}]},
-  options:{plugins:{legend:{labels:{color:'#e8eefc'}}}}
-});
-new Chart(document.getElementById('aidaChart'), {
-  type:'bar',
-  data:{labels:['Attention','Interest','Desire','Action'],datasets:[
-    {label:'Digital (Gen Z focus)',data:[95,85,80,78],backgroundColor:'#4da3ff'},
-    {label:'Traditional/Retail (45+ focus)',data:[70,75,82,84],backgroundColor:'#7ad99f'}
-  ]}, options:{scales:{x:{ticks:{color:'#dbe7ff'}},y:{ticks:{color:'#dbe7ff'},beginAtZero:true,max:100}},plugins:{legend:{labels:{color:'#e8eefc'}}}}
-});
-new Chart(document.getElementById('channelChart'), {
-  type:'pie',
-  data:{labels:['Retail core products','Online devices','Subscription services'],datasets:[{data:[50,30,20],backgroundColor:['#7be0ff','#4da3ff','#7ad99f']}]},
-  options:{plugins:{legend:{labels:{color:'#e8eefc'}}}}
-});
-new Chart(document.getElementById('timelineChart'), {
-  type:'line',
-  data:{labels:['M1','M2','M3','M4','M5','M6','M7-M12'],datasets:[{label:'Relative Marketing Intensity',data:[95,90,88,75,62,55,45],borderColor:'#7be0ff',backgroundColor:'rgba(123,224,255,0.2)',fill:true,tension:.3}]},
-  options:{scales:{x:{ticks:{color:'#dbe7ff'}},y:{ticks:{color:'#dbe7ff'},beginAtZero:true,max:100}},plugins:{legend:{labels:{color:'#e8eefc'}}}}
-});
-</script>
+  <script>
+    const commonLegend = { labels: { color: '#e8eefc' } };
+    const commonTicks = { color: '#dbe7ff' };
+
+    new Chart(document.getElementById('roleChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Leader: P&G', 'Challenger: Unilever', 'Follower: Kimberly-Clark', 'Niche: Colgate-Palmolive'],
+        datasets: [{ data: [40, 30, 16, 14], backgroundColor: ['#4da3ff', '#7ad99f', '#ffc86b', '#e992d2'] }]
+      },
+      options: { plugins: { legend: commonLegend } }
+    });
+
+    new Chart(document.getElementById('regionChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Latin America', 'North America', 'Europe'],
+        datasets: [{
+          label: 'P&G Regional Success Emphasis Index',
+          data: [86, 94, 89],
+          backgroundColor: ['#7ad99f', '#4da3ff', '#7be0ff']
+        }]
+      },
+      options: {
+        scales: { x: { ticks: commonTicks }, y: { ticks: commonTicks, beginAtZero: true, max: 100 } },
+        plugins: { legend: commonLegend }
+      }
+    });
+
+    new Chart(document.getElementById('brandValueChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Pantene', 'Dove', "L\'Oréal", 'Chanel'],
+        datasets: [{
+          label: '2026 Brand Value (USD Billions)',
+          data: [4.87, 5.5, 13.53, 24.4],
+          backgroundColor: ['#4da3ff', '#7ad99f', '#7be0ff', '#c69bff']
+        }]
+      },
+      options: {
+        scales: { x: { ticks: commonTicks }, y: { ticks: commonTicks, beginAtZero: true } },
+        plugins: { legend: commonLegend }
+      }
+    });
+  </script>
 </body>
 </html>
