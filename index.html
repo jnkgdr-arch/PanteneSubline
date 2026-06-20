@@ -3,111 +3,253 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pantene Scalp Vitality | Marketing Sub-line Strategy</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    :root { --bg:#0b1220; --card:#111a2e; --ink:#e8eefc; --muted:#9db0d4; --accent:#4da3ff; --accent2:#7be0ff; --ok:#7ad99f; }
-    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#09101d,#101b31);color:var(--ink)}
-    header{padding:56px 24px 28px;max-width:1200px;margin:auto}
-    h1{font-size:2.1rem;margin:0 0 10px} p{line-height:1.5}
-    .sub{color:var(--muted);max-width:920px}
-    main{max-width:1200px;margin:auto;padding:0 24px 60px;display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
-    .card{background:rgba(17,26,46,.9);border:1px solid #223353;border-radius:14px;padding:16px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
-    .span-12{grid-column:span 12}.span-6{grid-column:span 6}.span-4{grid-column:span 4}.span-8{grid-column:span 8}
-    h2{margin:0 0 8px;font-size:1.1rem} h3{margin:0 0 8px;color:var(--accent2)}
-    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi{background:#0e172b;padding:12px;border-radius:10px;border:1px solid #273b63}
-    .kpi .n{font-size:1.4rem;font-weight:700}.kpi .l{color:var(--muted);font-size:.88rem}
-    table{width:100%;border-collapse:collapse;font-size:.92rem} th,td{border-bottom:1px solid #294064;padding:8px;text-align:left} th{color:#b5cbf3}
-    .swot{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.pill{padding:10px;border-radius:10px;border:1px solid #2d4b7c}
-    .pill strong{display:block;margin-bottom:6px}
-    .muted{color:var(--muted)}
-    @media (max-width:900px){.span-6,.span-4,.span-8{grid-column:span 12}.kpis{grid-template-columns:repeat(2,1fr)}}
-  </style>
+  <title>Pantene Scalp Vitality Marketing Plan</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Pantene Scalp Vitality — Strategic Marketing Plan Dashboard</h1>
-    <p class="sub">A data-rich concept website for Pantene’s sub-line strategy combining scalp-focused formulations, tiered light therapy devices, and digital services for Gen Z prevention and 45+ restoration.</p>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">Pantene Scalp Vitality</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#strategy">Strategy</a>
+        <a href="#market">Market</a>
+        <a href="#product">Product</a>
+        <a href="#charts">Charts</a>
+        <a href="#metrics">Metrics</a>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="card span-12">
-      <h2>Executive Summary Snapshot</h2>
-      <div class="kpis">
-        <div class="kpi"><div class="n">$84.284B</div><div class="l">P&G 2025 Net Sales</div></div>
-        <div class="kpi"><div class="n">$16.065B</div><div class="l">P&G 2025 Net Earnings</div></div>
-        <div class="kpi"><div class="n">80%+</div><div class="l">Target Satisfaction in 3 Months</div></div>
-        <div class="kpi"><div class="n">10–20%</div><div class="l">Revenue Lift Goal in 6 Months</div></div>
+  <main id="home">
+    <section class="hero reveal">
+      <div class="hero-card">
+        <p class="eyebrow">Strategic Marketing Plan · Janelle Gardner</p>
+        <h1>Scalp Vitality turns Pantene into a science-led scalp health platform.</h1>
+        <p class="hero-copy">A chart-heavy website summary for P&amp;G’s proposed Pantene sub-brand: tiered light therapy devices, Magnetized Saline Water Ointment, a scalp-focused mass-market haircare line, subscription support, and targeted growth among Gen Z and 45+ consumers.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#charts">View Charts</a>
+          <a class="button secondary" href="#product">Explore Tiers</a>
+        </div>
       </div>
     </section>
 
-    <section class="card span-6"><h3>Market Segment Opportunity</h3><canvas id="segmentChart"></canvas></section>
-    <section class="card span-6"><h3>AIDA Channel Emphasis</h3><canvas id="aidaChart"></canvas></section>
-
-    <section class="card span-8">
-      <h3>Device Tier Pricing & Value Table</h3>
-      <table>
-        <thead><tr><th>Tier</th><th>Light</th><th>Wavelength</th><th>Price</th><th>Consult/Subscr.</th><th>Ointment</th><th>Primary Benefit Focus</th></tr></thead>
-        <tbody>
-          <tr><td>Premium</td><td>Near-Infrared</td><td>633nm</td><td>$800</td><td>Yes</td><td>100ml</td><td>Collagen, wound healing, density/thickness</td></tr>
-          <tr><td>Premium</td><td>Red</td><td>620nm</td><td>$600</td><td>Yes</td><td>100ml</td><td>Follicle stimulation, blood flow, repair</td></tr>
-          <tr><td>Mid</td><td>Green</td><td>520nm</td><td>$320</td><td>No</td><td>60ml</td><td>Anti-inflammatory maintenance + repair</td></tr>
-          <tr><td>Entry</td><td>Yellow</td><td>590nm</td><td>$150</td><td>No</td><td>None</td><td>Comfort, oxygenation, texture support</td></tr>
-        </tbody>
-      </table>
+    <section class="section launch-overview">
+      <div class="stats-band reveal" aria-label="Key plan statistics">
+        <article><span>$84.284B</span><p>P&amp;G 2025 net sales supporting launch capacity</p></article>
+        <article><span>$16.065B</span><p>2025 net earnings demonstrating financial strength</p></article>
+        <article><span>80–85%</span><p>Targeted consumer-reported improvement range</p></article>
+        <article><span>10–20%</span><p>Launch revenue contribution growth objective</p></article>
+      </div>
+      <aside class="panel reveal launch-model">
+        <p class="eyebrow">Launch Model</p>
+        <div class="funnel" aria-label="Scalp Vitality launch model funnel">
+          <div class="funnel-step awareness">Awareness: scalp-first science</div>
+          <div class="funnel-step trial">Trial: retail + e-commerce access</div>
+          <div class="funnel-step subscription">Retention: app + consultations</div>
+          <div class="funnel-step revenue">Growth: devices + repeat care</div>
+        </div>
+      </aside>
     </section>
 
-    <section class="card span-4"><h3>Channel Distribution Mix</h3><canvas id="channelChart"></canvas></section>
-
-    <section class="card span-6">
-      <h3>SWOT Overview</h3>
-      <div class="swot">
-        <div class="pill"><strong>Strengths</strong><span class="muted">Global brand equity, financial strength, R&D capability.</span></div>
-        <div class="pill"><strong>Weaknesses</strong><span class="muted">Slower haircare innovation pace, supply-chain exposure.</span></div>
-        <div class="pill"><strong>Opportunities</strong><span class="muted">Gen Z + 45+ segmentation, AI personalization, social momentum.</span></div>
-        <div class="pill"><strong>Threats</strong><span class="muted">Unilever/L’Oréal pressure, tariffs, rising ESG compliance costs.</span></div>
+    <section class="section" id="strategy">
+      <div class="panel reveal">
+        <p class="eyebrow">Executive Summary</p>
+        <h2>Growth opportunity</h2>
+        <p>Scalp Vitality positions Pantene in the expanding scalp health and technology-driven haircare market by combining tiered light therapy devices, Magnetized Saline Water Ointment, mass-market shampoo, conditioner, and leave-in treatments, digital tracking, and dermatologist-backed service support.</p>
+        <p>The strategy targets two needs at once: Gen Z consumers seeking prevention, balance, and viral innovation, and 45+ consumers seeking restorative treatment for thinning, density, and age-related scalp decline.</p>
+        <p>Consultations also create a feedback loop for product effectiveness, helping P&amp;G identify changes needed for devices, ointment pairings, and the broader haircare line after launch.</p>
       </div>
     </section>
 
-    <section class="card span-6"><h3>12-Month Rollout & Spend Allocation</h3><canvas id="timelineChart"></canvas></section>
+    <section class="section" id="market">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Current Marketing Situation</p>
+        <h2>Market forces shaping the plan</h2>
+      </div>
+      <div class="chart-grid three">
+        <article class="panel reveal">
+          <h3>Target segment mix</h3>
+          <div class="donut segment-donut" aria-label="Older consumers 41 percent and Gen Z 35 percent"></div>
+          <div class="legend"><span class="legend-old"></span>45+ consumers: 41%</div>
+          <div class="legend"><span class="legend-genz"></span>Gen Z: 35%</div>
+          <div class="legend"><span class="legend-other"></span>Other market: 24%</div>
+        </article>
+        <article class="panel reveal">
+          <h3>Beauty industry drivers</h3>
+          <div class="horizontal-bars" aria-label="Industry driver bar chart">
+            <div><span>AI personalization</span><b class="bar ai">48%</b></div>
+            <div><span>Scalp care trends</span><b class="bar scalp">High</b></div>
+            <div><span>Sustainability</span><b class="bar sustain">Rising</b></div>
+            <div><span>Social discovery</span><b class="bar social">Viral</b></div>
+          </div>
+        </article>
+        <article class="panel reveal">
+          <h3>Strategic objectives</h3>
+          <div class="goal-rings">
+            <div><strong>12 mo</strong><span>Launch in 3 markets</span></div>
+            <div><strong>3 mo</strong><span>80% satisfaction</span></div>
+            <div><strong>6 mo</strong><span>10–20% revenue lift</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <section class="card span-12">
-      <h3>Performance Metrics Framework</h3>
-      <table>
-        <thead><tr><th>Funnel Stage</th><th>Digital Metrics</th><th>Retail Metrics</th><th>Financial Metrics</th></tr></thead>
-        <tbody>
-          <tr><td>Awareness</td><td>Reach, impressions, traffic, bounce rate</td><td>In-store exposure, footfall</td><td>CPM, channel ROI</td></tr>
-          <tr><td>Consideration</td><td>Engagement, video completion, content downloads</td><td>Trial and assisted conversion</td><td>CAC by channel</td></tr>
-          <tr><td>Conversion</td><td>Conversion rate, lead-to-close ratio</td><td>Sell-through, unit sales</td><td>Revenue growth, AOV, device sales</td></tr>
-          <tr><td>Retention</td><td>Repeat purchase, subscription renewal</td><td>Repeat basket behaviors</td><td>CLV, revenue per user</td></tr>
-        </tbody>
-      </table>
+    <section class="section competitive-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Competitive Intensity</p>
+        <h2>Market strength comparison</h2>
+      </div>
+      <div class="chart-grid two">
+        <article class="panel reveal">
+          <h3>Market strength graph</h3>
+          <div class="competitive-bars" aria-label="Company market strength comparison chart">
+            <div><span>P&amp;G</span><b class="strength-bar pg">100</b></div>
+            <div><span>Unilever</span><b class="strength-bar unilever">82</b></div>
+            <div><span>Colgate-Palmolive</span><b class="strength-bar colgate">42</b></div>
+            <div><span>Kimberly-Clark</span><b class="strength-bar kimberly">38</b></div>
+          </div>
+        </article>
+        <article class="panel reveal">
+          <h3>Competitive role analysis</h3>
+          <div class="role-grid">
+            <div><strong>Leader</strong><span>P&amp;G has the strongest scale, profitability, and brand portfolio.</span></div>
+            <div><strong>Challenger</strong><span>Unilever applies bioscience, social-first marketing, and global reach.</span></div>
+            <div><strong>Niche</strong><span>Colgate-Palmolive is focused on oral care, pet health, and cost discipline.</span></div>
+            <div><strong>Follower</strong><span>Kimberly-Clark maintains stable care-category performance.</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="charts">
+      <div class="section-heading reveal">
+        <p class="eyebrow">S.W.O.T. Dashboard</p>
+        <h2>Strategic diagnosis</h2>
+      </div>
+      <div class="swot-grid">
+        <article class="swot strength reveal"><h3>Strengths</h3><ul><li>Global brand equity</li><li>Strong financial performance</li><li>Innovation across haircare, grooming, and home care</li></ul></article>
+        <article class="swot weakness reveal"><h3>Weaknesses</h3><ul><li>Slower Pantene haircare innovation</li><li>Regulatory exposure</li><li>Supply chain risk</li></ul></article>
+        <article class="swot opportunity reveal"><h3>Opportunities</h3><ul><li>Social media scalp trends</li><li>AI personalization</li><li>Gen Z and 45+ targeting</li></ul></article>
+        <article class="swot threat reveal"><h3>Threats</h3><ul><li>Unilever and L’Oréal pressure</li><li>Tariff risk</li><li>Sustainability expectations</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section" id="product">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Product + Pricing Strategy</p>
+        <h2>Low-level light therapy tier map</h2>
+      </div>
+      <div class="product-system reveal">
+        <article><strong>Magnetized Saline Water Ointment</strong><span>Scalp hydration and barrier-support formula paired with selected devices in 100 ml and 60 ml sizes.</span></article>
+        <article><strong>Mass-Market Haircare Line</strong><span>Shampoo, conditioner, and leave-in treatments promoted alongside devices for daily scalp balance.</span></article>
+        <article><strong>Tiered Light Devices</strong><span>Near-infrared, red, green, and yellow light options aligned to restorative or preventative needs.</span></article>
+      </div>
+      <div class="tier-chart reveal" aria-label="Device tier price comparison chart">
+        <article class="tier nir"><div class="price">$800</div><div class="column"></div><h3>Near-Infrared</h3><p>633 nm helmet with consultation, subscription, and 100 ml ointment for advanced restorative support.</p></article>
+        <article class="tier red"><div class="price">$600</div><div class="column"></div><h3>Red Light</h3><p>620 nm helmet for density, thickness, circulation, collagen, and scalp regeneration support.</p></article>
+        <article class="tier green"><div class="price">$320</div><div class="column"></div><h3>Green Light</h3><p>520 nm brush device for inflammation reduction, tissue repair, and preventative maintenance.</p></article>
+        <article class="tier yellow"><div class="price">$150</div><div class="column"></div><h3>Yellow Light</h3><p>590 nm brush device for cellular energy, oxygenation, skin texture, and accessible entry.</p></article>
+      </div>
+      <div class="panel table-panel reveal">
+        <h3>Tier details</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Tier</th><th>Target</th><th>Channel</th><th>Device-Paired Offering</th><th>Service / Feedback Loop</th><th>Primary Benefit</th></tr></thead>
+            <tbody>
+              <tr><td>Near-Infrared</td><td>45+ restorative</td><td>Online only</td><td>Helmet + 100 ml Magnetized Saline Water Ointment + haircare routine</td><td>Consult + subscription; efficacy feedback for device and formula changes</td><td>Density, collagen, wound healing</td></tr>
+              <tr><td>Red Light</td><td>45+ restorative</td><td>Online only</td><td>Helmet + 100 ml Magnetized Saline Water Ointment + haircare routine</td><td>Consult + subscription; treatment monitoring and product feedback</td><td>Growth, repair, blood flow</td></tr>
+              <tr><td>Green Light</td><td>Gen Z prevention</td><td>Retail + online</td><td>Brush device + 60 ml Magnetized Saline Water Ointment + haircare routine</td><td>Optional support + surveys for comfort and maintenance feedback</td><td>Inflammation and tissue repair</td></tr>
+              <tr><td>Yellow Light</td><td>Gen Z entry</td><td>Retail + online</td><td>Brush device + mass-market shampoo, conditioner, and leave-in care</td><td>Warranty support + post-purchase feedback</td><td>Texture, comfort, oxygenation</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="panel reveal">
+        <p class="eyebrow">Distribution Diagram</p>
+        <h2>Tiered channel strategy</h2>
+        <div class="flow-diagram">
+          <div>Pantene Scalp Vitality</div>
+          <div>Mass-market line<br><small>Shampoo · Conditioner · Leave-in · Ointment</small></div>
+          <div>Retail access<br><small>Green + Yellow + haircare</small></div>
+          <div>Online pathway<br><small>Red + Near-Infrared + ointment bundles</small></div>
+          <div>Trial + adoption</div>
+          <div class="wide-node">Consult + monitoring + product effectiveness feedback for needed device, ointment, and haircare line updates</div>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <p class="eyebrow">Communication Diagram</p>
+        <h2>AIDA rollout</h2>
+        <ol class="timeline">
+          <li><strong>Attention</strong><span>Press launch, TikTok, Instagram, YouTube, TV</span></li>
+          <li><strong>Interest</strong><span>Dermatologist-led influencer education</span></li>
+          <li><strong>Desire</strong><span>Testimonials and transformation content</span></li>
+          <li><strong>Action</strong><span>Purchase, subscribe, track progress</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section rollout-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Rollout Timeline</p>
+        <h2>Launch graph across devices, ointment, and haircare</h2>
+      </div>
+      <div class="panel reveal rollout-panel">
+        <div class="timeline-graph" aria-label="12-month rollout timeline for all Scalp Vitality products">
+          <div class="track labels"><span>Product</span><span>Months 1–3</span><span>Months 4–6</span><span>Months 7–9</span><span>Months 10–12</span></div>
+          <div class="track"><span>Mass-market haircare</span><b class="phase haircare">Formula test</b><b class="phase haircare launch">Retail launch</b><b class="phase haircare sustain">Digital sustain</b></div>
+          <div class="track"><span>Saline water ointment</span><b class="phase ointment">100 ml + 60 ml tests</b><b class="phase ointment launch">Bundle rollout</b><b class="phase ointment sustain">Refill push</b></div>
+          <div class="track"><span>Green + Yellow devices</span><b class="phase genz">Prototype + claims</b><b class="phase genz launch">Retail/e-com launch</b><b class="phase genz sustain">Influencer refresh</b></div>
+          <div class="track"><span>Red + NIR devices</span><b class="phase premium">Clinical setup</b><b class="phase premium launch">Online launch</b><b class="phase premium sustain">Consult feedback loop</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metrics">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Financial Plan + Metrics</p>
+        <h2>Budget and performance dashboards</h2>
+      </div>
+      <div class="chart-grid two">
+        <article class="panel reveal">
+          <h3>Funding capacity</h3>
+          <div class="vertical-bars" aria-label="P&G financial capacity bar chart">
+            <div class="vbar cash"><span>$17.817B</span><b>Operating cash flow</b></div>
+            <div class="vbar income"><span>$20.451B</span><b>Operating income</b></div>
+            <div class="vbar capex"><span>$3.773B</span><b>Capital expenditures</b></div>
+            <div class="vbar beauty"><span>$14.964B</span><b>Beauty sales</b></div>
+          </div>
+        </article>
+        <article class="panel reveal">
+          <h3>Marketing budget range</h3>
+          <div class="budget-meter">
+            <div class="budget-fill"></div>
+            <span>$898M</span><strong>6–12% of Beauty sales</strong><span>$1.796B</span>
+          </div>
+          <div class="metric-chips">
+            <span>Device development</span><span>Manufacturing</span><span>App + CRM</span><span>Influencers</span><span>TV + social</span><span>Consultations</span>
+          </div>
+        </article>
+      </div>
+      <div class="metric-board reveal">
+        <article><strong>Awareness</strong><span>Traffic · Reach · Impressions · Engagement</span></article>
+        <article><strong>Conversion</strong><span>Conversion rate · Lead-to-close · AOV</span></article>
+        <article><strong>Retail</strong><span>Sell-through · Unit sales · Channel ROI</span></article>
+        <article><strong>Device</strong><span>Sales · Subscriptions · Revenue per user</span></article>
+        <article><strong>Retention</strong><span>Repeat purchase · CLV · Satisfaction</span></article>
+      </div>
+    </section>
+
+    <section class="section references reveal">
+      <p class="eyebrow">References</p>
+      <h2>Research base</h2>
+      <p>This website summarizes the provided strategic marketing plan and reference list, including P&amp;G financial reporting, McKinsey/Statista beauty trend data, TikTok haircare trend reporting, scalp aging research, and light therapy studies by Lee et al., Tantiyavarong et al., Ziveh et al., Garcia et al., and Susigan et al.</p>
     </section>
   </main>
 
-<script>
-new Chart(document.getElementById('segmentChart'), {
-  type:'doughnut',
-  data:{labels:['Age 45+','Gen Z'],datasets:[{data:[41,35],backgroundColor:['#4da3ff','#7be0ff']}]},
-  options:{plugins:{legend:{labels:{color:'#e8eefc'}}}}
-});
-new Chart(document.getElementById('aidaChart'), {
-  type:'bar',
-  data:{labels:['Attention','Interest','Desire','Action'],datasets:[
-    {label:'Digital (Gen Z focus)',data:[95,85,80,78],backgroundColor:'#4da3ff'},
-    {label:'Traditional/Retail (45+ focus)',data:[70,75,82,84],backgroundColor:'#7ad99f'}
-  ]}, options:{scales:{x:{ticks:{color:'#dbe7ff'}},y:{ticks:{color:'#dbe7ff'},beginAtZero:true,max:100}},plugins:{legend:{labels:{color:'#e8eefc'}}}}
-});
-new Chart(document.getElementById('channelChart'), {
-  type:'pie',
-  data:{labels:['Retail core products','Online devices','Subscription services'],datasets:[{data:[50,30,20],backgroundColor:['#7be0ff','#4da3ff','#7ad99f']}]},
-  options:{plugins:{legend:{labels:{color:'#e8eefc'}}}}
-});
-new Chart(document.getElementById('timelineChart'), {
-  type:'line',
-  data:{labels:['M1','M2','M3','M4','M5','M6','M7-M12'],datasets:[{label:'Relative Marketing Intensity',data:[95,90,88,75,62,55,45],borderColor:'#7be0ff',backgroundColor:'rgba(123,224,255,0.2)',fill:true,tension:.3}]},
-  options:{scales:{x:{ticks:{color:'#dbe7ff'}},y:{ticks:{color:'#dbe7ff'},beginAtZero:true,max:100}},plugins:{legend:{labels:{color:'#e8eefc'}}}}
-});
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
