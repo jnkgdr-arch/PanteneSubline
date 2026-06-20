@@ -104,9 +104,10 @@ p, li, td { color: var(--soft); line-height: 1.7; }
 .panel, .references { border-radius: 28px; padding: 26px; transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease; }
 .panel:hover, .tier:hover, .swot:hover, .metric-board article:hover { transform: translateY(-7px); border-color: rgba(248, 212, 92, 0.52); background: var(--panel-strong); }
 
-.launch-overview { display: grid; grid-template-columns: minmax(320px, 620px); gap: 18px; align-items: stretch; }
+.launch-overview { display: grid; grid-template-columns: minmax(360px, .85fr) minmax(320px, 1fr); gap: 18px; align-items: stretch; }
 .stats-band { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .stats-band article { border-radius: 24px; padding: 22px; min-height: 140px; }
+.launch-model { min-height: 100%; }
 .stats-band span { display: block; color: var(--gold); font-size: clamp(1.7rem, 3vw, 2.45rem); font-weight: 950; }
 .stats-band p { margin-bottom: 0; }
 
@@ -133,13 +134,6 @@ p, li, td { color: var(--soft); line-height: 1.7; }
 .goal-rings div { min-height: 142px; border: 10px solid rgba(248,212,92,.22); border-top-color: var(--gold); border-right-color: var(--cyan); border-radius: 50%; display: grid; place-items: center; padding: 16px; text-align: center; }
 .goal-rings strong { display: block; color: var(--gold); font-size: 1.35rem; }
 .goal-rings span { color: var(--soft); font-size: .82rem; }
-
-.funnel { display: grid; justify-items: center; align-content: center; gap: 10px; min-height: 270px; margin-top: 16px; }
-.funnel-step { min-height: 52px; display: grid; place-items: center; color: #07111f; font-weight: 950; border-radius: 14px; padding: 12px; text-align: center; }
-.awareness { width: 100%; background: var(--gold); }
-.trial { width: 84%; background: var(--cyan); }
-.subscription { width: 68%; background: var(--blue); color: white; }
-.revenue { width: 52%; background: var(--pink); }
 
 .swot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .swot { border-radius: 26px; padding: 24px; border-top: 8px solid var(--gold); transition: .3s ease; }
