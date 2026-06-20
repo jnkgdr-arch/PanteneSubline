@@ -167,8 +167,8 @@ p, li, td { color: var(--soft); line-height: 1.7; }
 .yellow .column { height: 70px; background: linear-gradient(180deg, #eab308, #fde68a); box-shadow: 0 0 34px rgba(234,179,8,.42); }
 .table-panel { margin-top: 18px; }
 .table-wrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; min-width: 760px; }
-th, td { padding: 15px 12px; text-align: left; border-bottom: 1px solid rgba(255, 255, 255, 0.14); }
+table { width: 100%; border-collapse: collapse; min-width: 920px; table-layout: fixed; }
+th, td { padding: 15px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid rgba(255, 255, 255, 0.14); overflow-wrap: anywhere; }
 th { color: #111827; background: linear-gradient(135deg, var(--gold), var(--gold-2)); }
 tbody tr { transition: background 0.25s ease; }
 tbody tr:hover { background: rgba(255,255,255,.08); }
