@@ -75,14 +75,14 @@ body::after {
 .nav-toggle { display: none; border: 1px solid rgba(255,255,255,.35); background: rgba(255,255,255,.08); color: var(--white); border-radius: 999px; padding: 9px 15px; font-weight: 900; }
 
 main { padding-bottom: 42px; }
-.hero { min-height: 82vh; display: grid; place-items: center; padding: 110px 24px 54px; }
+.hero { max-width: 1240px; min-height: 82vh; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr); align-items: center; gap: 24px; margin: 0 auto; padding: 110px 24px 54px; }
 .hero-card, .panel, .stats-band article, .swot, .tier, .metric-board article, .references {
   background: var(--panel);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   backdrop-filter: blur(16px);
 }
-.hero-card { position: relative; max-width: 1080px; border-radius: 38px; padding: clamp(32px, 6vw, 72px); text-align: center; overflow: hidden; }
+.hero-card { position: relative; max-width: 760px; border-radius: 38px; padding: clamp(32px, 5vw, 64px); text-align: left; overflow: hidden; }
 .hero-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(130deg, rgba(248, 212, 92, 0.24), transparent 34%, rgba(96, 165, 250, 0.18)); opacity: 0.78; }
 .hero-card > * { position: relative; }
 .eyebrow { margin: 0 0 12px; color: var(--gold); font-size: 0.78rem; font-weight: 950; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -92,11 +92,13 @@ h2 { color: var(--white); font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 16
 h3 { color: var(--gold-2); margin-bottom: 12px; }
 p, li, td { color: var(--soft); line-height: 1.7; }
 .hero-copy { max-width: 840px; margin: 0 auto 30px; color: var(--white); font-size: 1.16rem; }
-.hero-actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+.hero-actions { display: flex; justify-content: flex-start; gap: 14px; flex-wrap: wrap; }
 .button { border-radius: 999px; padding: 14px 24px; font-weight: 950; text-decoration: none; transition: transform 0.25s ease, box-shadow 0.25s ease; }
 .button:hover { transform: translateY(-3px) scale(1.02); }
 .button.primary { background: linear-gradient(135deg, var(--gold), #f59e0b); color: #111827; box-shadow: 0 12px 30px rgba(248, 212, 92, 0.25); }
 .button.secondary { background: rgba(255,255,255,.1); border: 1px solid var(--line); color: var(--white); }
+.hero-visual { margin: 0; border: 1px solid var(--line); border-radius: 34px; padding: clamp(16px, 3vw, 28px); background: rgba(3, 7, 18, 0.72); box-shadow: var(--shadow); backdrop-filter: blur(16px); animation: floatIn .9s ease both; }
+.hero-visual img { display: block; width: 100%; height: auto; border-radius: 24px; object-fit: cover; }
 
 .section { max-width: 1240px; margin: 0 auto 38px; padding: 0 24px; }
 .section-heading { margin-bottom: 18px; text-shadow: 0 2px 16px rgba(0,0,0,.55); }
@@ -230,6 +232,7 @@ tbody tr:hover { background: rgba(255,255,255,.08); }
 @keyframes growHeight { from { transform: scaleY(.05); transform-origin: bottom; } to { transform: scaleY(1); transform-origin: bottom; } }
 @keyframes growWidth { from { transform: scaleX(.05); transform-origin: left; } to { transform: scaleX(1); transform-origin: left; } }
 @keyframes spinIn { from { transform: rotate(-90deg) scale(.75); opacity: .2; } to { transform: rotate(0) scale(1); opacity: 1; } }
+@keyframes floatIn { from { opacity: 0; transform: translateX(28px) scale(.96); } to { opacity: 1; transform: translateX(0) scale(1); } }
 @keyframes lightSweep { 0%, 38% { transform: translateX(-120%); } 58%, 100% { transform: translateX(120%); } }
 @keyframes starDrift { to { background-position: 92px 46px; } }
 
@@ -238,6 +241,8 @@ tbody tr:hover { background: rgba(255,255,255,.08); }
   .reveal { opacity: 1; transform: none; }
 }
 @media (max-width: 1050px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-card { max-width: none; }
   .chart-grid.three, .swot-grid, .tier-chart, .metric-board, .stats-band, .product-system, .role-grid { grid-template-columns: repeat(2, 1fr); }
   .launch-overview, .split, .chart-grid.two { grid-template-columns: 1fr; }
 }
@@ -251,4 +256,6 @@ tbody tr:hover { background: rgba(255,255,255,.08); }
   .flow-diagram { grid-template-columns: 1fr; }
   .flow-diagram .wide-node { grid-column: auto; }
   .hero { min-height: auto; padding-top: 78px; }
+  .hero-card { text-align: center; }
+  .hero-actions { justify-content: center; }
 }
