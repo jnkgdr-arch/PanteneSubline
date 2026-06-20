@@ -135,6 +135,13 @@ p, li, td { color: var(--soft); line-height: 1.7; }
 .goal-rings strong { display: block; color: var(--gold); font-size: 1.35rem; }
 .goal-rings span { color: var(--soft); font-size: .82rem; }
 
+.funnel { display: grid; justify-items: center; align-content: center; gap: 10px; min-height: 270px; margin-top: 16px; }
+.funnel-step { min-height: 52px; display: grid; place-items: center; color: #07111f; font-weight: 950; border-radius: 14px; padding: 12px; text-align: center; }
+.awareness { width: 100%; background: var(--gold); }
+.trial { width: 84%; background: var(--cyan); }
+.subscription { width: 68%; background: var(--blue); color: white; }
+.revenue { width: 52%; background: var(--pink); }
+
 .swot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .swot { border-radius: 26px; padding: 24px; border-top: 8px solid var(--gold); transition: .3s ease; }
 .swot ul { margin: 0; padding-left: 18px; }
