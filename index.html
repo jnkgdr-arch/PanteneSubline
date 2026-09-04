@@ -26,7 +26,7 @@
       <div class="hero-card">
         <p class="eyebrow">Strategic Marketing Plan · Janelle Gardner</p>
         <h1>Scalp Vitality turns Pantene into a science-led scalp health platform.</h1>
-        <p class="hero-copy">A chart-heavy website summary for P&amp;G’s proposed Pantene sub-brand: tiered light therapy devices, Magnetized Saline Water Ointment, a scalp-focused mass-market haircare line, subscription support, and targeted growth among Gen Z and 45+ consumers.</p>
+        <p class="hero-copy">An executive strategy for P&amp;G’s proposed Pantene sub-brand: tiered light therapy, Magnetized Saline Water Ointment, scalp-focused haircare, subscription support, and targeted growth among Gen Z and 45+ consumers.</p>
         <div class="hero-actions">
           <a class="button primary" href="#charts">View Charts</a>
           <a class="button secondary" href="#product">Explore Tiers</a>
@@ -56,12 +56,23 @@
     </section>
 
     <section class="section" id="strategy">
-      <div class="panel reveal">
+      <div class="panel reveal strategy-summary">
         <p class="eyebrow">Executive Summary</p>
         <h2>Growth opportunity</h2>
-        <p>Scalp Vitality positions Pantene in the expanding scalp health and technology-driven haircare market by combining tiered light therapy devices, Magnetized Saline Water Ointment, mass-market shampoo, conditioner, and leave-in treatments, digital tracking, and dermatologist-backed service support.</p>
-        <p>The strategy targets two needs at once: Gen Z consumers seeking prevention, balance, and viral innovation, and 45+ consumers seeking restorative treatment for thinning, density, and age-related scalp decline.</p>
-        <p>Consultations also create a feedback loop for product effectiveness, helping P&amp;G identify changes needed for devices, ointment pairings, and the broader haircare line after launch.</p>
+        <p>Scalp Vitality extends Pantene from daily haircare into a connected scalp-health platform combining beauty, technology, and service.</p>
+        <ul class="strategy-points">
+          <li><strong>Expand the category:</strong> pair scalp-focused formulas with tiered light devices.</li>
+          <li><strong>Serve two growth audiences:</strong> Gen Z prevention and 45+ restorative care.</li>
+          <li><strong>Build a learning system:</strong> consultations and digital tracking feed product optimization.</li>
+        </ul>
+        <details class="disclosure">
+          <summary>View Strategy Details</summary>
+          <div class="disclosure-content">
+            <p>Scalp Vitality positions Pantene in the expanding scalp health and technology-driven haircare market by combining tiered light therapy devices, Magnetized Saline Water Ointment, mass-market shampoo, conditioner, and leave-in treatments, digital tracking, and dermatologist-backed service support.</p>
+            <p>The strategy targets two needs at once: Gen Z consumers seeking prevention, balance, and viral innovation, and 45+ consumers seeking restorative treatment for thinning, density, and age-related scalp decline.</p>
+            <p>Consultations also create a feedback loop for product effectiveness, helping P&amp;G identify changes needed for devices, ointment pairings, and the broader haircare line after launch.</p>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -91,8 +102,8 @@
           <h3>Strategic objectives</h3>
           <div class="goal-rings">
             <div><strong>12 mo</strong><span>Launch in 3 markets</span></div>
-            <div><strong>3 mo</strong><span>80% satisfaction</span></div>
-            <div><strong>6 mo</strong><span>10–20% revenue lift</span></div>
+            <div><strong>3 mo</strong><span>≥80% satisfaction</span></div>
+            <div><strong>6 mo</strong><span>+10–20% revenue</span></div>
           </div>
         </article>
       </div>
@@ -148,15 +159,24 @@
         <article><strong>Mass-Market Haircare Line</strong><span>Shampoo, conditioner, and leave-in treatments promoted alongside devices for daily scalp balance.</span></article>
         <article><strong>Tiered Light Devices</strong><span>Near-infrared, red, green, and yellow light options aligned to restorative or preventative needs.</span></article>
       </div>
-      <div class="tier-chart reveal" aria-label="Device tier price comparison chart">
-        <article class="tier nir"><div class="price">$800</div><div class="column"></div><h3>Near-Infrared</h3><p>633 nm helmet with consultation, subscription, and 100 ml ointment for advanced restorative support.</p></article>
-        <article class="tier red"><div class="price">$600</div><div class="column"></div><h3>Red Light</h3><p>620 nm helmet for density, thickness, circulation, collagen, and scalp regeneration support.</p></article>
-        <article class="tier green"><div class="price">$320</div><div class="column"></div><h3>Green Light</h3><p>520 nm brush device for inflammation reduction, tissue repair, and preventative maintenance.</p></article>
-        <article class="tier yellow"><div class="price">$150</div><div class="column"></div><h3>Yellow Light</h3><p>590 nm brush device for cellular energy, oxygenation, skin texture, and accessible entry.</p></article>
+      <div class="tier-chart reveal" role="tablist" aria-label="Select a device tier">
+        <button class="tier nir active" type="button" role="tab" aria-selected="true" aria-controls="tier-detail" data-tier="nir"><h3>Near-Infrared</h3><span class="price">$800</span><span>45+ Restorative</span><span>Online · Helmet</span><small>View details →</small></button>
+        <button class="tier red" type="button" role="tab" aria-selected="false" aria-controls="tier-detail" data-tier="red"><h3>Red Light</h3><span class="price">$600</span><span>45+ Restorative</span><span>Online · Helmet</span><small>View details →</small></button>
+        <button class="tier green" type="button" role="tab" aria-selected="false" aria-controls="tier-detail" data-tier="green"><h3>Green Light</h3><span class="price">$320</span><span>Gen Z Prevention</span><span>Retail + Online · Brush</span><small>View details →</small></button>
+        <button class="tier yellow" type="button" role="tab" aria-selected="false" aria-controls="tier-detail" data-tier="yellow"><h3>Yellow Light</h3><span class="price">$150</span><span>Gen Z Entry</span><span>Retail + Online · Brush</span><small>View details →</small></button>
       </div>
-      <div class="panel table-panel reveal">
-        <h3>Tier details</h3>
-        <div class="table-wrap">
+      <article class="panel selected-tier reveal" id="tier-detail" role="tabpanel" tabindex="0" aria-live="polite">
+        <div class="tier-detail-heading"><div><p class="eyebrow">Selected Tier Details</p><h3 data-detail="name">Near-Infrared</h3></div><strong data-detail="price">$800</strong></div>
+        <p class="tier-meta" data-detail="meta">45+ Restorative · Online only</p>
+        <div class="tier-detail-grid">
+          <div><span>Device-Paired Offering</span><p data-detail="offering">Helmet + 100 ml Magnetized Saline Water Ointment + haircare routine</p></div>
+          <div><span>Service / Feedback Loop</span><p data-detail="service">Consult + subscription; efficacy feedback for device and formula changes</p></div>
+          <div><span>Primary Benefit</span><p data-detail="benefit">Diminishes skin roughness, promotes wound healing, increases hair density and thickness, and supports collagen production.</p></div>
+        </div>
+      </article>
+      <details class="panel table-panel reveal disclosure">
+        <summary>View Full Tier Comparison</summary>
+        <div class="table-wrap disclosure-content">
           <table>
             <thead><tr><th>Tier</th><th>Target</th><th>Channel</th><th>Device-Paired Offering</th><th>Service / Feedback Loop</th><th>Primary Benefit</th></tr></thead>
             <tbody>
@@ -167,7 +187,7 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </details>
     </section>
 
     <section class="section split">
@@ -247,9 +267,10 @@
     </section>
 
     <section class="section references reveal">
-      <p class="eyebrow">References</p>
-      <h2>Research base</h2>
-      <p>This website summarizes the provided strategic marketing plan and reference list, including P&amp;G financial reporting, McKinsey/Statista beauty trend data, TikTok haircare trend reporting, scalp aging research, and light therapy studies by Lee et al., Tantiyavarong et al., Ziveh et al., Garcia et al., and Susigan et al.</p>
+      <details class="disclosure">
+        <summary>View Research Sources</summary>
+        <div class="disclosure-content"><h2>Research base</h2><p>This website summarizes the provided strategic marketing plan and reference list, including P&amp;G financial reporting, McKinsey/Statista beauty trend data, TikTok haircare trend reporting, scalp aging research, and light therapy studies by Lee et al., Tantiyavarong et al., Ziveh et al., Garcia et al., and Susigan et al.</p></div>
+      </details>
     </section>
   </main>
 
